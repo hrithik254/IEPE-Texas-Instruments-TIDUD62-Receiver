@@ -1093,7 +1093,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "038c31f3-8046-4565-ae89-22d2dca13a5c")
-		(property "Reference" "C36"
+		(property "Reference" "C39"
 			(at 118.11 109.2135 0)
 			(effects
 				(font
@@ -1111,7 +1111,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 115.57 110.49 0)
 			(effects
 				(font
@@ -1147,7 +1147,7 @@
 		(instances
 			(project "IEPE Texas Instruments TIDUD62 Receiver"
 				(path "/b0c16732-dcc2-48d1-93ba-25fcc89f81c2/f907adcb-c574-4480-822e-f7997401b310"
-					(reference "C36")
+					(reference "C39")
 					(unit 1)
 				)
 			)
@@ -1163,7 +1163,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "23ebf8c2-de2f-496f-b7cf-dc6ddfb5a273")
-		(property "Reference" "C34"
+		(property "Reference" "C36"
 			(at 88.9063 86.36 90)
 			(effects
 				(font
@@ -1179,7 +1179,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 88.9 92.71 0)
 			(effects
 				(font
@@ -1215,7 +1215,7 @@
 		(instances
 			(project "IEPE Texas Instruments TIDUD62 Receiver"
 				(path "/b0c16732-dcc2-48d1-93ba-25fcc89f81c2/f907adcb-c574-4480-822e-f7997401b310"
-					(reference "C34")
+					(reference "C36")
 					(unit 1)
 				)
 			)
@@ -1231,7 +1231,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3297e109-6daf-4020-88f3-0ddf7fa2661b")
-		(property "Reference" "R54"
+		(property "Reference" "R58"
 			(at 177.8 104.14 90)
 			(effects
 				(font
@@ -1247,7 +1247,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 177.8 97.79 0)
 			(effects
 				(font
@@ -1283,7 +1283,7 @@
 		(instances
 			(project "IEPE Texas Instruments TIDUD62 Receiver"
 				(path "/b0c16732-dcc2-48d1-93ba-25fcc89f81c2/f907adcb-c574-4480-822e-f7997401b310"
-					(reference "R54")
+					(reference "R58")
 					(unit 1)
 				)
 			)
@@ -1299,7 +1299,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3823f110-b068-4e88-bc07-166047f9df95")
-		(property "Reference" "#PWR060"
+		(property "Reference" "#PWR061"
 			(at 167.64 116.84 0)
 			(effects
 				(font
@@ -1349,7 +1349,7 @@
 		(instances
 			(project "IEPE Texas Instruments TIDUD62 Receiver"
 				(path "/b0c16732-dcc2-48d1-93ba-25fcc89f81c2/f907adcb-c574-4480-822e-f7997401b310"
-					(reference "#PWR060")
+					(reference "#PWR061")
 					(unit 1)
 				)
 			)
@@ -1381,7 +1381,7 @@
 				)
 			)
 		)
-		(property "Footprint" "DGK0008A_N"
+		(property "Footprint" "Project Footprint Library:REF6025"
 			(at 140.97 95.25 0)
 			(effects
 				(font
@@ -1453,7 +1453,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "59e3dc11-200f-441f-8a1c-a30194174a10")
-		(property "Reference" "#PWR055"
+		(property "Reference" "#PWR058"
 			(at 82.55 101.6 0)
 			(effects
 				(font
@@ -1503,7 +1503,7 @@
 		(instances
 			(project "IEPE Texas Instruments TIDUD62 Receiver"
 				(path "/b0c16732-dcc2-48d1-93ba-25fcc89f81c2/f907adcb-c574-4480-822e-f7997401b310"
-					(reference "#PWR055")
+					(reference "#PWR058")
 					(unit 1)
 				)
 			)
@@ -1519,7 +1519,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6579cecf-7fad-48f1-97c9-a095f7a6b540")
-		(property "Reference" "R55"
+		(property "Reference" "R57"
 			(at 191.77 93.98 90)
 			(effects
 				(font
@@ -1535,7 +1535,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 191.77 87.63 0)
 			(effects
 				(font
@@ -1571,7 +1571,7 @@
 		(instances
 			(project "IEPE Texas Instruments TIDUD62 Receiver"
 				(path "/b0c16732-dcc2-48d1-93ba-25fcc89f81c2/f907adcb-c574-4480-822e-f7997401b310"
-					(reference "R55")
+					(reference "R57")
 					(unit 1)
 				)
 			)
@@ -1587,7 +1587,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7ce4f997-4ed4-4b4c-855c-3766e89b31c8")
-		(property "Reference" "R53"
+		(property "Reference" "R59"
 			(at 107.95 104.1399 0)
 			(effects
 				(font
@@ -1605,7 +1605,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 105.41 105.41 0)
 			(effects
 				(font
@@ -1641,7 +1641,7 @@
 		(instances
 			(project "IEPE Texas Instruments TIDUD62 Receiver"
 				(path "/b0c16732-dcc2-48d1-93ba-25fcc89f81c2/f907adcb-c574-4480-822e-f7997401b310"
-					(reference "R53")
+					(reference "R59")
 					(unit 1)
 				)
 			)
@@ -1657,7 +1657,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "93e6517b-4de3-4e0f-9a19-1598a503b143")
-		(property "Reference" "#PWR059"
+		(property "Reference" "#PWR062"
 			(at 115.57 123.19 0)
 			(effects
 				(font
@@ -1707,7 +1707,7 @@
 		(instances
 			(project "IEPE Texas Instruments TIDUD62 Receiver"
 				(path "/b0c16732-dcc2-48d1-93ba-25fcc89f81c2/f907adcb-c574-4480-822e-f7997401b310"
-					(reference "#PWR059")
+					(reference "#PWR062")
 					(unit 1)
 				)
 			)
@@ -1723,7 +1723,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cda8e20b-6cc8-448c-936d-daec33c40f01")
-		(property "Reference" "#PWR057"
+		(property "Reference" "#PWR059"
 			(at 92.71 116.84 0)
 			(effects
 				(font
@@ -1773,7 +1773,7 @@
 		(instances
 			(project "IEPE Texas Instruments TIDUD62 Receiver"
 				(path "/b0c16732-dcc2-48d1-93ba-25fcc89f81c2/f907adcb-c574-4480-822e-f7997401b310"
-					(reference "#PWR057")
+					(reference "#PWR059")
 					(unit 1)
 				)
 			)
@@ -1789,7 +1789,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d04d52ba-e6c5-438b-8952-85c03533a53a")
-		(property "Reference" "#PWR058"
+		(property "Reference" "#PWR060"
 			(at 105.41 116.84 0)
 			(effects
 				(font
@@ -1839,7 +1839,7 @@
 		(instances
 			(project "IEPE Texas Instruments TIDUD62 Receiver"
 				(path "/b0c16732-dcc2-48d1-93ba-25fcc89f81c2/f907adcb-c574-4480-822e-f7997401b310"
-					(reference "#PWR058")
+					(reference "#PWR060")
 					(unit 1)
 				)
 			)
@@ -1870,7 +1870,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 177.8 92.71 0)
 			(effects
 				(font
@@ -1922,7 +1922,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ed14222f-2885-4afc-b3de-10b063fb584d")
-		(property "Reference" "C35"
+		(property "Reference" "C38"
 			(at 95.25 102.8635 0)
 			(effects
 				(font
@@ -1940,7 +1940,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 92.71 104.14 0)
 			(effects
 				(font
@@ -1976,7 +1976,7 @@
 		(instances
 			(project "IEPE Texas Instruments TIDUD62 Receiver"
 				(path "/b0c16732-dcc2-48d1-93ba-25fcc89f81c2/f907adcb-c574-4480-822e-f7997401b310"
-					(reference "C35")
+					(reference "C38")
 					(unit 1)
 				)
 			)

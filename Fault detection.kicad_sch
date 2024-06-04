@@ -5,50 +5,50 @@
 	(uuid "861018ec-2208-4bf9-b6cd-52de1c4820f6")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Project Symbol Library:LP2901D"
+		(symbol "Comparator:LP2901D"
 			(pin_names
-				(offset 0.254)
+				(offset 0.127)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "U"
-				(at 30.48 10.16 0)
+				(at 0 5.08 0)
 				(effects
 					(font
-						(size 1.524 1.524)
+						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
 			(property "Value" "LP2901D"
-				(at 30.48 7.62 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-				)
-			)
-			(property "Footprint" "D14"
-				(at 0 0 0)
+				(at 0 -5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
-						(italic yes)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+				(at -1.27 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
 					)
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "LP2901D"
-				(at 0 0 0)
+			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/lp2901.pdf"
+				(at 1.27 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
-						(italic yes)
 					)
 					(hide yes)
 				)
 			)
-			(property "Description" ""
+			(property "Description" "Quad Differential Comparators, SOIC-14"
 				(at 0 0 0)
 				(effects
 					(font
@@ -65,7 +65,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "LP2901D"
+			(property "ki_keywords" "cmp open collector"
 				(at 0 0 0)
 				(effects
 					(font
@@ -74,7 +74,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "D14 D14-M D14-L"
+			(property "ki_fp_filters" "SOIC*3.9x8.7mm*P1.27mm*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -83,10 +83,23 @@
 					(hide yes)
 				)
 			)
-			(symbol "LP2901D_0_1"
+			(symbol "LP2901D_1_1"
 				(polyline
 					(pts
-						(xy 7.62 -20.32) (xy 53.34 -20.32)
+						(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.302 -0.508) (xy 2.794 -0.508) (xy 3.302 0) (xy 2.794 0.508) (xy 2.286 0) (xy 2.794 -0.508)
+						(xy 2.286 -0.508)
 					)
 					(stroke
 						(width 0.127)
@@ -96,154 +109,10 @@
 						(type none)
 					)
 				)
-				(polyline
-					(pts
-						(xy 7.62 5.08) (xy 7.62 -20.32)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 53.34 -20.32) (xy 53.34 5.08)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 53.34 5.08) (xy 7.62 5.08)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin output line
-					(at 0 0 0)
-					(length 7.62)
-					(name "1OUT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 60.96 -10.16 180)
-					(length 7.62)
-					(name "4IN-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 60.96 -7.62 180)
-					(length 7.62)
-					(name "4IN+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 60.96 -5.08 180)
-					(length 7.62)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 60.96 -2.54 180)
-					(length 7.62)
-					(name "4OUT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "13"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 60.96 0 180)
-					(length 7.62)
-					(name "3OUT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 0 -2.54 0)
-					(length 7.62)
-					(name "2OUT"
+				(pin open_collector line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -258,28 +127,10 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at 0 -5.08 0)
-					(length 7.62)
-					(name "VCC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin input line
-					(at 0 -7.62 0)
-					(length 7.62)
-					(name "2IN-"
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "-"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -295,9 +146,9 @@
 					)
 				)
 				(pin input line
-					(at 0 -10.16 0)
-					(length 7.62)
-					(name "2IN+"
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "+"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -312,10 +163,55 @@
 						)
 					)
 				)
+			)
+			(symbol "LP2901D_2_1"
+				(polyline
+					(pts
+						(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.302 -0.508) (xy 2.794 -0.508) (xy 3.302 0) (xy 2.794 0.508) (xy 2.286 0) (xy 2.794 -0.508)
+						(xy 2.286 -0.508)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin open_collector line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 				(pin input line
-					(at 0 -12.7 0)
-					(length 7.62)
-					(name "1IN-"
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "-"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -331,9 +227,9 @@
 					)
 				)
 				(pin input line
-					(at 0 -15.24 0)
-					(length 7.62)
-					(name "1IN+"
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "+"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -348,10 +244,136 @@
 						)
 					)
 				)
+			)
+			(symbol "LP2901D_3_1"
+				(polyline
+					(pts
+						(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.302 -0.508) (xy 2.794 -0.508) (xy 3.302 0) (xy 2.794 0.508) (xy 2.286 0) (xy 2.794 -0.508)
+						(xy 2.286 -0.508)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(pin input line
-					(at 60.96 -15.24 180)
-					(length 7.62)
-					(name "3IN-"
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin open_collector line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "LP2901D_4_1"
+				(polyline
+					(pts
+						(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.302 -0.508) (xy 2.794 -0.508) (xy 3.302 0) (xy 2.794 0.508) (xy 2.286 0) (xy 2.794 -0.508)
+						(xy 2.286 -0.508)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin open_collector line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "-"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -367,9 +389,9 @@
 					)
 				)
 				(pin input line
-					(at 60.96 -12.7 180)
-					(length 7.62)
-					(name "3IN+"
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "+"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -377,6 +399,414 @@
 						)
 					)
 					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "LP2901D_5_1"
+				(pin power_in line
+					(at -2.54 -7.62 90)
+					(length 3.81)
+					(name "V-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -2.54 7.62 270)
+					(length 3.81)
+					(name "V+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Connector:TestPoint"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.762) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device:C_Small"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.254) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.254 1.778 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C_Small"
+				(at 0.254 -2.032 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Unpolarized capacitor, small symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "capacitor cap"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_Small_0_1"
+				(polyline
+					(pts
+						(xy -1.524 -0.508) (xy 1.524 -0.508)
+					)
+					(stroke
+						(width 0.3302)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 0.508) (xy 1.524 0.508)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_Small_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 2.032)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 2.032)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device:R_Small_US"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.254) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 0.762 0.508 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "R_Small_US"
+				(at 0.762 -1.016 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor, small US symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "r resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_Small_US_1_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 1.016 -0.381) (xy 0 -0.762) (xy -1.016 -1.143) (xy 0 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.524) (xy 1.016 1.143) (xy 0 0.762) (xy -1.016 0.381) (xy 0 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 0 2.54 270)
+					(length 1.016)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 1.016)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -484,166 +914,560 @@
 		)
 	)
 	(junction
-		(at 193.04 97.79)
+		(at 77.47 91.44)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "152dd632-2504-439d-a3b9-69ff2eee0f7a")
+		(uuid "03fca486-b16c-4929-8e4a-a1ead6192dd1")
 	)
 	(junction
-		(at 193.04 92.71)
+		(at 83.82 113.03)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "4b96d87b-a30d-4f1f-a33f-5a490b772a72")
+		(uuid "055b027a-bcd5-40d7-af1f-ba161f860467")
 	)
 	(junction
-		(at 201.93 92.71)
+		(at 213.36 69.85)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "a0ef5b0c-a0c5-44ee-a964-936d599f2705")
+		(uuid "22c083b8-caa2-4844-a9fe-a2436a494680")
 	)
 	(junction
-		(at 201.93 97.79)
+		(at 88.9 134.62)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "e913a642-7b2a-478b-ab64-fef7c366c872")
+		(uuid "3b86241e-ff97-4aad-bc4c-9e0a628ceac3")
+	)
+	(junction
+		(at 96.52 85.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5daa5ff2-6240-4227-b00d-c2ba8eca6eca")
+	)
+	(junction
+		(at 55.88 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "77eadb1e-112c-406b-9874-536222bb2a28")
+	)
+	(junction
+		(at 88.9 113.03)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7c5f1e43-18ed-448c-8a32-31a45f0674a2")
+	)
+	(junction
+		(at 62.23 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "83dff19a-64ce-4e95-b3e7-2e39d6acee97")
+	)
+	(junction
+		(at 147.32 115.57)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a70d6034-7489-4119-87eb-44b062ff1c7e")
+	)
+	(junction
+		(at 83.82 53.34)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b4991b0b-f974-49a7-bf5b-7eaa0661662f")
+	)
+	(junction
+		(at 208.28 49.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bec73935-c340-4474-a01f-fcaebfef6fdf")
+	)
+	(junction
+		(at 148.59 82.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ed276287-532b-4a72-9595-d8637b6331ee")
+	)
+	(junction
+		(at 83.82 85.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fed1a1fd-7279-48e1-b31e-10dbbbf4b1f7")
 	)
 	(no_connect
-		(at 186.69 83.82)
-		(uuid "ceea4fc1-c986-4fb0-837e-fdc93ee0ac7a")
+		(at 231.14 46.99)
+		(uuid "26067118-dd2b-4034-bec4-2ad2ad2da472")
 	)
 	(no_connect
-		(at 186.69 86.36)
-		(uuid "f05a5ed1-c355-452e-9a86-c1f687b9014f")
+		(at 232.41 67.31)
+		(uuid "63128985-fca0-42c8-a345-e802102024bf")
 	)
 	(wire
 		(pts
-			(xy 186.69 91.44) (xy 193.04 91.44)
+			(xy 77.47 118.11) (xy 104.14 118.11)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "13a1df95-0493-46b3-aefe-b1b092dc41cd")
+		(uuid "061ac39d-7429-40da-98ee-97ee1b396200")
 	)
 	(wire
 		(pts
-			(xy 193.04 96.52) (xy 193.04 97.79)
+			(xy 83.82 53.34) (xy 83.82 63.5)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1d5d7734-c4d4-4eea-8e1e-037491507613")
+		(uuid "0f13f91f-965c-4255-9bbe-9b1d9ceb0d38")
 	)
 	(wire
 		(pts
-			(xy 201.93 92.71) (xy 193.04 92.71)
+			(xy 148.59 68.58) (xy 148.59 72.39)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "27f90b7f-5e55-4bea-9e94-ce608624ece4")
+		(uuid "13371322-20af-4ef8-a86a-9ab1f4667bb5")
 	)
 	(wire
 		(pts
-			(xy 186.69 93.98) (xy 193.04 93.98)
+			(xy 62.23 91.44) (xy 77.47 91.44)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "295aa755-aca1-432b-b19b-f125464c03e3")
+		(uuid "1b09c18c-574d-46a4-ad99-0a63cb703097")
 	)
 	(wire
 		(pts
-			(xy 193.04 97.79) (xy 193.04 99.06)
+			(xy 38.1 91.44) (xy 48.26 91.44)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2d172147-bf20-490d-b036-a1ddd17c6f4a")
+		(uuid "356c4d4e-0943-444b-aff2-e8ea09bfc842")
 	)
 	(wire
 		(pts
-			(xy 186.69 96.52) (xy 193.04 96.52)
+			(xy 93.98 53.34) (xy 97.79 53.34)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "550f99a5-4a64-4739-96a8-4230c7b27fa3")
+		(uuid "3fd79c1d-f9da-4a55-b4e9-ef00ec4f5187")
 	)
 	(wire
 		(pts
-			(xy 193.04 93.98) (xy 193.04 92.71)
+			(xy 147.32 115.57) (xy 166.37 115.57)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5972f7e5-07f9-41bb-b4af-29a11615cd28")
+		(uuid "40b2d47b-2381-4471-b6bf-a3623e303334")
 	)
 	(wire
 		(pts
-			(xy 201.93 88.9) (xy 201.93 92.71)
+			(xy 80.01 113.03) (xy 83.82 113.03)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6b7a1151-6c60-4360-9fb2-a480d8e321f8")
+		(uuid "43682817-b124-4931-84cf-4f1576ad081f")
 	)
 	(wire
 		(pts
-			(xy 186.69 88.9) (xy 201.93 88.9)
+			(xy 215.9 44.45) (xy 208.28 44.45)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6f82f619-d938-46ac-994c-ea5688d6a11c")
+		(uuid "43c45445-156b-4fbe-97aa-ff2d70611d25")
 	)
 	(wire
 		(pts
-			(xy 193.04 97.79) (xy 201.93 97.79)
+			(xy 83.82 101.6) (xy 83.82 113.03)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9f01e5c6-b4e5-402e-9e30-5ef1dd885775")
+		(uuid "4ac68f69-70d2-4b78-b650-e47b7f825a8f")
 	)
 	(wire
 		(pts
-			(xy 201.93 100.33) (xy 201.93 97.79)
+			(xy 96.52 90.17) (xy 96.52 85.09)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a8e15148-5b38-42f8-b00b-666a0a10565c")
+		(uuid "4bc2e19f-1c13-41af-9ae4-416d90d97277")
 	)
 	(wire
 		(pts
-			(xy 193.04 92.71) (xy 193.04 91.44)
+			(xy 213.36 69.85) (xy 217.17 69.85)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "bd4e1800-4e8d-4b4a-8a89-d437b53d5a6b")
+		(uuid "4dafcf21-1ea1-49fd-b867-46163c032cf3")
 	)
 	(wire
 		(pts
-			(xy 193.04 99.06) (xy 186.69 99.06)
+			(xy 53.34 91.44) (xy 55.88 91.44)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "de60b543-b7f9-4f41-97fe-7c061957adbf")
+		(uuid "54bb0944-b6b3-45c4-80b8-a6a05729293e")
+	)
+	(wire
+		(pts
+			(xy 208.28 49.53) (xy 215.9 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5af9a6b9-526e-4301-b772-674d23aaa7b2")
+	)
+	(wire
+		(pts
+			(xy 80.01 134.62) (xy 88.9 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "63126212-9401-4d30-a89e-2800e5969d01")
+	)
+	(wire
+		(pts
+			(xy 88.9 129.54) (xy 88.9 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "64b94d31-4376-4633-8e08-490b685c7c13")
+	)
+	(wire
+		(pts
+			(xy 118.11 82.55) (xy 148.59 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6b1cc50f-d8ed-47c6-8145-89a3c4573674")
+	)
+	(wire
+		(pts
+			(xy 80.01 129.54) (xy 80.01 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7589dc50-2ef7-49ec-8eb5-4429073aa360")
+	)
+	(wire
+		(pts
+			(xy 50.8 162.56) (xy 72.39 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7972f572-8f77-439d-b567-72263af1c1c8")
+	)
+	(wire
+		(pts
+			(xy 88.9 134.62) (xy 88.9 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "79e119ee-bdb8-4c18-887c-2bac5187967e")
+	)
+	(wire
+		(pts
+			(xy 147.32 110.49) (xy 147.32 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d0394f0-e423-4a3b-8324-c883e7dae6d2")
+	)
+	(wire
+		(pts
+			(xy 48.26 176.53) (xy 74.93 176.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "802cbaca-5e44-41fd-9d8c-1e50ed50e95f")
+	)
+	(wire
+		(pts
+			(xy 217.17 64.77) (xy 213.36 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8587e3d7-13ff-411b-a2c3-d63ec4d66d28")
+	)
+	(wire
+		(pts
+			(xy 83.82 113.03) (xy 88.9 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8ab68bd9-688d-4bd0-9ef0-ad532eae4a29")
+	)
+	(wire
+		(pts
+			(xy 83.82 43.18) (xy 83.82 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8df1be5d-19a7-498b-8485-76a00e2455d3")
+	)
+	(wire
+		(pts
+			(xy 119.38 115.57) (xy 147.32 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9688e344-c5f7-4b1e-98c1-9d14e9edda93")
+	)
+	(wire
+		(pts
+			(xy 55.88 81.28) (xy 55.88 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9812c99b-77fe-4777-ba1b-5d19fb2d5367")
+	)
+	(wire
+		(pts
+			(xy 147.32 101.6) (xy 147.32 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "98d8d83b-8765-4e9e-8df4-7b10006a3e7c")
+	)
+	(wire
+		(pts
+			(xy 62.23 91.44) (xy 62.23 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d7ef8ac-3154-4cf4-9dbd-e918efa26306")
+	)
+	(wire
+		(pts
+			(xy 96.52 95.25) (xy 96.52 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a392f066-bf08-47d8-ac56-b8df70868eb8")
+	)
+	(wire
+		(pts
+			(xy 55.88 91.44) (xy 62.23 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a4497e1e-98a2-4f73-bf0c-179d116f694f")
+	)
+	(wire
+		(pts
+			(xy 77.47 80.01) (xy 77.47 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a951d120-ddaf-4431-a692-3baed94c8c8d")
+	)
+	(wire
+		(pts
+			(xy 104.14 113.03) (xy 88.9 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa4fc225-9cb7-4f82-a217-d52c10657d6d")
+	)
+	(wire
+		(pts
+			(xy 134.62 44.45) (xy 134.62 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab945aa9-9bce-448b-a088-9746c966bda9")
+	)
+	(wire
+		(pts
+			(xy 62.23 101.6) (xy 62.23 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "adc60a0f-d475-414b-973d-21c4578c8df9")
+	)
+	(wire
+		(pts
+			(xy 48.26 171.45) (xy 74.93 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "adfa5ac5-b449-4639-9bef-4f870fea26d1")
+	)
+	(wire
+		(pts
+			(xy 83.82 85.09) (xy 96.52 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b1abaeee-4f67-4556-939d-333dd31239f0")
+	)
+	(wire
+		(pts
+			(xy 208.28 44.45) (xy 208.28 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b392f12a-794f-4f50-8daf-d7356b547eaf")
+	)
+	(wire
+		(pts
+			(xy 83.82 96.52) (xy 83.82 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b78c8f3d-e1b9-41f5-948a-0c8bfc78ade4")
+	)
+	(wire
+		(pts
+			(xy 134.62 24.13) (xy 134.62 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c2c75b82-3bcc-4dd3-b32c-c5aab685147a")
+	)
+	(wire
+		(pts
+			(xy 83.82 53.34) (xy 88.9 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c6d3adf9-abe0-4569-b9dd-98776564b61f")
+	)
+	(wire
+		(pts
+			(xy 148.59 77.47) (xy 148.59 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d08710f1-af3c-4853-bbbb-96c70f2a448a")
+	)
+	(wire
+		(pts
+			(xy 83.82 68.58) (xy 83.82 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d51df26e-6728-4a43-8eec-3fe95cff4abd")
+	)
+	(wire
+		(pts
+			(xy 96.52 85.09) (xy 102.87 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d57fcc88-e6ba-4330-8ce0-a89157d09b6d")
+	)
+	(wire
+		(pts
+			(xy 80.01 124.46) (xy 80.01 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d9c817ad-7d96-47bf-8cc6-7d58def73786")
+	)
+	(wire
+		(pts
+			(xy 102.87 80.01) (xy 77.47 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "da6237bd-9b80-46d4-a6d6-cc00807a3018")
+	)
+	(wire
+		(pts
+			(xy 48.26 167.64) (xy 74.93 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "de92f7c6-c5fb-414a-a26d-d117f92b2ef6")
 	)
 	(wire
 		(pts
@@ -657,13 +1481,108 @@
 	)
 	(wire
 		(pts
-			(xy 201.93 97.79) (xy 201.93 92.71)
+			(xy 213.36 64.77) (xy 213.36 69.85)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "fdb11b81-b1d4-42e2-8e71-454da1f3267f")
+		(uuid "e7ff011d-259d-4108-8ba9-de35e02f1ee8")
+	)
+	(wire
+		(pts
+			(xy 148.59 82.55) (xy 166.37 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e8616df0-a0a9-4410-ac96-c6ec37d91420")
+	)
+	(wire
+		(pts
+			(xy 88.9 113.03) (xy 88.9 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ee180050-09ef-4a78-ad04-91361aee7700")
+	)
+	(wire
+		(pts
+			(xy 77.47 91.44) (xy 77.47 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff0f8acb-e0ff-4d5f-8477-3530dc98d595")
+	)
+	(text "detects open circuit and high voltage\nInput Voltage > 11V"
+		(exclude_from_sim no)
+		(at 135.636 86.36 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "abc91094-c607-49ed-bd0a-765f917cdc4f")
+	)
+	(label "VCC_24V"
+		(at 72.39 162.56 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "04dfd957-3d0a-444d-92ac-6ce22925aef3")
+	)
+	(label "DVDD"
+		(at 74.93 167.64 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2c7264c5-702b-4dd7-8865-8028e9538827")
+	)
+	(label "OPEN_ERR"
+		(at 166.37 82.55 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4d8ec733-9ee4-45e1-9fda-855efdf04dbc")
+	)
+	(label "OPEN_ERR"
+		(at 74.93 171.45 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "54108dfa-aed3-4f0f-91c0-1d64f36d1c40")
+	)
+	(label "VCC_24V"
+		(at 134.62 24.13 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7c9a4fe3-72f9-499b-9ddc-dfa02f9ad930")
 	)
 	(label "ACC_OUT"
 		(at 72.39 156.21 0)
@@ -675,6 +1594,120 @@
 			(justify left bottom)
 		)
 		(uuid "811bd217-63af-4560-8cee-eb2bba84afef")
+	)
+	(label "SHORT_ERR"
+		(at 166.37 115.57 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "aec9aa72-a0b9-4835-a39a-467f9eebd6bf")
+	)
+	(label "SHORT_ERR"
+		(at 74.93 176.53 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c02ac592-9e17-4352-9c6d-863794375f95")
+	)
+	(label "VCC_24V"
+		(at 83.82 43.18 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e3cdeb26-5f3c-4d26-a482-4bb75d29217c")
+	)
+	(label "DVDD"
+		(at 147.32 101.6 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ea9d8fe5-9ffc-4aae-ba80-0a096ad6642d")
+	)
+	(label "ACC_OUT"
+		(at 38.1 91.44 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "ee451fb1-280c-4492-9f6b-3f9d7d175d4d")
+	)
+	(label "DVDD"
+		(at 148.59 68.58 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f567a64d-c116-4d16-8382-8cd7e5a92208")
+	)
+	(hierarchical_label "SHORT_ERR"
+		(shape input)
+		(at 48.26 176.53 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "0866e95f-f35b-492b-8f98-98a25bc66b03")
+	)
+	(hierarchical_label "VCC_24V"
+		(shape input)
+		(at 50.8 162.56 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "2bcc8fd6-b13c-4e0f-bd9a-0b0e491f07cc")
+	)
+	(hierarchical_label "DVDD"
+		(shape input)
+		(at 48.26 167.64 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "2d069446-9921-4ebe-a4c0-6606df325ca0")
+	)
+	(hierarchical_label "OPEN_ERR"
+		(shape input)
+		(at 48.26 171.45 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "4a052a48-2554-48f6-b9c4-dfbf61f544fd")
 	)
 	(hierarchical_label "ACC_OUT"
 		(shape input)
@@ -689,123 +1722,17 @@
 		(uuid "67fef9f1-6cd9-4dac-a923-834bfb7f7d7e")
 	)
 	(symbol
-		(lib_id "Project Symbol Library:LP2901D")
-		(at 125.73 83.82 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "73f1c84a-952b-4827-9885-60012629727b")
-		(property "Reference" "U10"
-			(at 156.21 73.66 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "LP2901D"
-			(at 156.21 76.2 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Footprint" "D14"
-			(at 125.73 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "LP2901D"
-			(at 125.73 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 125.73 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "12"
-			(uuid "1b586666-78a9-4f47-9b92-0b3a1674393b")
-		)
-		(pin "13"
-			(uuid "f12d872a-f6c6-410a-934e-978caf59371e")
-		)
-		(pin "4"
-			(uuid "e6395552-fb0a-4193-88c1-0effa4468cd5")
-		)
-		(pin "10"
-			(uuid "cf615b5b-4bf2-4192-ada3-2a55268e970d")
-		)
-		(pin "1"
-			(uuid "0230a044-5b83-4b69-8d2b-74d38d4760e5")
-		)
-		(pin "3"
-			(uuid "5355f0b2-f6cb-447c-a979-a01c1d126557")
-		)
-		(pin "9"
-			(uuid "921323b2-4061-441b-b345-a28e3fbe752f")
-		)
-		(pin "7"
-			(uuid "46b72f7c-b604-4bb6-b0aa-363e8562fb93")
-		)
-		(pin "11"
-			(uuid "e193b8dc-6d24-4a12-b4f7-03b452540ac5")
-		)
-		(pin "14"
-			(uuid "36a02a7c-6f21-49a9-ab00-d8f3c7576d67")
-		)
-		(pin "2"
-			(uuid "5b46322a-31e0-4fff-8128-8021ddb2d259")
-		)
-		(pin "8"
-			(uuid "407423ab-786c-4b52-96e0-6d218c95a69f")
-		)
-		(pin "6"
-			(uuid "8fe5c4fd-8e5f-495e-8706-b87fa4084609")
-		)
-		(pin "5"
-			(uuid "ba2e08ce-83b0-4278-b1a1-6063ee389a70")
-		)
-		(instances
-			(project "IEPE Texas Instruments TIDUD62 Receiver"
-				(path "/b0c16732-dcc2-48d1-93ba-25fcc89f81c2/2f580ff7-409b-41a4-8721-2459f5df303f"
-					(reference "U10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
-		(at 201.93 100.33 0)
+		(at 88.9 137.16 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "e37a805e-69a9-4ab6-befb-4f451807d1f3")
-		(property "Reference" "#PWR061"
-			(at 201.93 106.68 0)
+		(uuid "043da5ab-fb6a-4bb5-934b-7061b38a4ce0")
+		(property "Reference" "#PWR057"
+			(at 88.9 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -814,7 +1741,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 201.93 105.41 0)
+			(at 88.9 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -822,7 +1749,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 201.93 100.33 0)
+			(at 88.9 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -831,7 +1758,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 201.93 100.33 0)
+			(at 88.9 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -840,7 +1767,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 201.93 100.33 0)
+			(at 88.9 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -849,12 +1776,1695 @@
 			)
 		)
 		(pin "1"
-			(uuid "24aa543f-a78b-4caf-a8bb-3e86e45fbb73")
+			(uuid "1552838a-5372-4c2b-931a-393584a12636")
 		)
 		(instances
 			(project "IEPE Texas Instruments TIDUD62 Receiver"
 				(path "/b0c16732-dcc2-48d1-93ba-25fcc89f81c2/2f580ff7-409b-41a4-8721-2459f5df303f"
-					(reference "#PWR061")
+					(reference "#PWR057")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 208.28 49.53 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0b77e89e-2119-44ab-92c5-6e0807680543")
+		(property "Reference" "#PWR051"
+			(at 208.28 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 208.28 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 208.28 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 208.28 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 208.28 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5348f97b-8136-4068-9743-1a23f57116c0")
+		)
+		(instances
+			(project "IEPE Texas Instruments TIDUD62 Receiver"
+				(path "/b0c16732-dcc2-48d1-93ba-25fcc89f81c2/2f580ff7-409b-41a4-8721-2459f5df303f"
+					(reference "#PWR051")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 55.88 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0dd1ee06-5210-465f-a794-0fbb0d7c79e3")
+		(property "Reference" "TP6"
+			(at 58.42 76.7079 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 58.42 79.2479 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm"
+			(at 60.96 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 60.96 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 55.88 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "eae0305b-9e1d-473b-b703-f92342c2d4e8")
+		)
+		(instances
+			(project "IEPE Texas Instruments TIDUD62 Receiver"
+				(path "/b0c16732-dcc2-48d1-93ba-25fcc89f81c2/2f580ff7-409b-41a4-8721-2459f5df303f"
+					(reference "TP6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 213.36 69.85 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2ff69629-eb1a-4b7b-a324-2faec0b3919b")
+		(property "Reference" "#PWR054"
+			(at 213.36 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 213.36 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 213.36 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 213.36 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 213.36 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "029971d4-7b1f-41ea-a1ba-e6ee73b9868b")
+		)
+		(instances
+			(project "IEPE Texas Instruments TIDUD62 Receiver"
+				(path "/b0c16732-dcc2-48d1-93ba-25fcc89f81c2/2f580ff7-409b-41a4-8721-2459f5df303f"
+					(reference "#PWR054")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 83.82 66.04 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "337c0a1d-1acb-4350-8d90-a4c8dbf6897a")
+		(property "Reference" "R51"
+			(at 86.36 64.7699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "150K"
+			(at 86.36 67.3099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 83.82 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 83.82 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 83.82 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "787a1b0b-aaf5-4bf9-883f-a71b834e897a")
+		)
+		(pin "2"
+			(uuid "2f901d71-14cc-4769-aa20-104b2e81fc17")
+		)
+		(instances
+			(project "IEPE Texas Instruments TIDUD62 Receiver"
+				(path "/b0c16732-dcc2-48d1-93ba-25fcc89f81c2/2f580ff7-409b-41a4-8721-2459f5df303f"
+					(reference "R51")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 96.52 99.06 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4256da90-9f97-4ca1-960d-24df3a518b54")
+		(property "Reference" "#PWR055"
+			(at 96.52 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 96.52 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 96.52 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 96.52 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 96.52 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7bd4b6f5-c3f9-48e9-b13a-43eeb5f17305")
+		)
+		(instances
+			(project "IEPE Texas Instruments TIDUD62 Receiver"
+				(path "/b0c16732-dcc2-48d1-93ba-25fcc89f81c2/2f580ff7-409b-41a4-8721-2459f5df303f"
+					(reference "#PWR055")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Comparator:LP2901D")
+		(at 110.49 82.55 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "430649a9-d023-48da-9bbc-13a4b853daa4")
+		(property "Reference" "U8"
+			(at 110.49 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LP2901D"
+			(at 110.49 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+			(at 109.22 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/lp2901.pdf"
+			(at 111.76 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Quad Differential Comparators, SOIC-14"
+			(at 110.49 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "7"
+			(uuid "d73e7d21-3bcb-46f6-ba55-b6e42bc0a9fa")
+		)
+		(pin "13"
+			(uuid "b63f23cc-4a9a-43dd-89bd-1c44d197dd66")
+		)
+		(pin "14"
+			(uuid "346bb37f-6ce4-4948-935e-2c9c42a4b806")
+		)
+		(pin "12"
+			(uuid "c4a04d3d-8b50-449b-9942-ccae66d158f0")
+		)
+		(pin "2"
+			(uuid "c37de117-7cfc-45cf-9b6b-4c769753054b")
+		)
+		(pin "11"
+			(uuid "50cf0515-0071-4ef5-a825-fee6f25140e3")
+		)
+		(pin "6"
+			(uuid "1a692254-4410-4196-b260-c4526b52db89")
+		)
+		(pin "8"
+			(uuid "bc0c8946-e327-4771-bbeb-69c8e9de64a2")
+		)
+		(pin "3"
+			(uuid "4cf4f36a-85de-4ff6-a6c9-f89ce158902c")
+		)
+		(pin "5"
+			(uuid "0ca5c7cd-d54b-4ba5-830a-cd7f60c684d5")
+		)
+		(pin "9"
+			(uuid "1000db59-672e-4d73-91a5-0d10f8f2a455")
+		)
+		(pin "4"
+			(uuid "cdbd0bda-3944-4ee4-acd7-270c9c4d4c67")
+		)
+		(pin "10"
+			(uuid "cd3da74a-674e-423a-8e3d-0d1a4edc937e")
+		)
+		(pin "1"
+			(uuid "40dcecec-d501-4e6c-8159-7b8f4ccbee8d")
+		)
+		(instances
+			(project "IEPE Texas Instruments TIDUD62 Receiver"
+				(path "/b0c16732-dcc2-48d1-93ba-25fcc89f81c2/2f580ff7-409b-41a4-8721-2459f5df303f"
+					(reference "U8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Comparator:LP2901D")
+		(at 111.76 115.57 0)
+		(mirror x)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5455e0ed-60f7-4e60-8c58-cbaf3fc9a2fc")
+		(property "Reference" "U8"
+			(at 111.76 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LP2901D"
+			(at 111.76 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+			(at 110.49 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/lp2901.pdf"
+			(at 113.03 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Quad Differential Comparators, SOIC-14"
+			(at 111.76 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "7"
+			(uuid "d73e7d21-3bcb-46f6-ba55-b6e42bc0a9fb")
+		)
+		(pin "13"
+			(uuid "b63f23cc-4a9a-43dd-89bd-1c44d197dd67")
+		)
+		(pin "14"
+			(uuid "346bb37f-6ce4-4948-935e-2c9c42a4b807")
+		)
+		(pin "12"
+			(uuid "c4a04d3d-8b50-449b-9942-ccae66d158f1")
+		)
+		(pin "2"
+			(uuid "c37de117-7cfc-45cf-9b6b-4c769753054c")
+		)
+		(pin "11"
+			(uuid "50cf0515-0071-4ef5-a825-fee6f25140e4")
+		)
+		(pin "6"
+			(uuid "1a692254-4410-4196-b260-c4526b52db8a")
+		)
+		(pin "8"
+			(uuid "bc0c8946-e327-4771-bbeb-69c8e9de64a3")
+		)
+		(pin "3"
+			(uuid "4cf4f36a-85de-4ff6-a6c9-f89ce158902d")
+		)
+		(pin "5"
+			(uuid "0ca5c7cd-d54b-4ba5-830a-cd7f60c684d6")
+		)
+		(pin "9"
+			(uuid "1000db59-672e-4d73-91a5-0d10f8f2a456")
+		)
+		(pin "4"
+			(uuid "cdbd0bda-3944-4ee4-acd7-270c9c4d4c68")
+		)
+		(pin "10"
+			(uuid "cd3da74a-674e-423a-8e3d-0d1a4edc937f")
+		)
+		(pin "1"
+			(uuid "40dcecec-d501-4e6c-8159-7b8f4ccbee8e")
+		)
+		(instances
+			(project "IEPE Texas Instruments TIDUD62 Receiver"
+				(path "/b0c16732-dcc2-48d1-93ba-25fcc89f81c2/2f580ff7-409b-41a4-8721-2459f5df303f"
+					(reference "U8")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 50.8 91.44 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "545eefca-b473-4b6b-8818-80c7d1eec9ef")
+		(property "Reference" "R53"
+			(at 50.8 85.09 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "4.99M"
+			(at 50.8 87.63 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 50.8 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 50.8 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 50.8 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c689fd06-7f03-4b79-9fd8-dcb37c510708")
+		)
+		(pin "2"
+			(uuid "8de4cd43-9a24-4924-988f-fa23e1a0b76c")
+		)
+		(instances
+			(project "IEPE Texas Instruments TIDUD62 Receiver"
+				(path "/b0c16732-dcc2-48d1-93ba-25fcc89f81c2/2f580ff7-409b-41a4-8721-2459f5df303f"
+					(reference "R53")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Comparator:LP2901D")
+		(at 137.16 36.83 0)
+		(unit 5)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "64a33e70-66ad-48aa-86ca-43f9f20b86bf")
+		(property "Reference" "U8"
+			(at 135.89 35.5599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "LP2901D"
+			(at 135.89 38.0999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+			(at 135.89 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/lp2901.pdf"
+			(at 138.43 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Quad Differential Comparators, SOIC-14"
+			(at 137.16 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "13"
+			(uuid "8721be54-6b1a-48df-b965-fd5aa1c6b87b")
+		)
+		(pin "7"
+			(uuid "58066eb1-6da5-4112-80bf-3373c2b159cf")
+		)
+		(pin "9"
+			(uuid "202e0da6-e087-453b-92fa-e6a8a3e093d4")
+		)
+		(pin "10"
+			(uuid "a98b8424-3f37-4f4c-97c7-0198c04fe33f")
+		)
+		(pin "3"
+			(uuid "96d2cc1b-5b75-499c-8141-f33f804639ff")
+		)
+		(pin "8"
+			(uuid "06ed728c-0f17-43b7-9802-501b159948f2")
+		)
+		(pin "4"
+			(uuid "4b8cce3b-3b27-4ff7-a2fb-91da236eb290")
+		)
+		(pin "5"
+			(uuid "76547a22-a4bb-4289-9e9d-dbca7bc7d4a2")
+		)
+		(pin "14"
+			(uuid "22af55bf-9cd1-47b1-8486-969fa5bac4b0")
+		)
+		(pin "11"
+			(uuid "efca1c78-afa5-4ff5-986e-836e41f61653")
+		)
+		(pin "1"
+			(uuid "636170d1-cb85-4100-81b6-121a67bffbf6")
+		)
+		(pin "2"
+			(uuid "775d082f-bf0e-43fa-8441-991fe4b49dfe")
+		)
+		(pin "6"
+			(uuid "d1fbd73b-e4ae-4864-a08c-7438781cfa36")
+		)
+		(pin "12"
+			(uuid "a96c92bd-d2df-40ba-b0dc-78817b38da3f")
+		)
+		(instances
+			(project "IEPE Texas Instruments TIDUD62 Receiver"
+				(path "/b0c16732-dcc2-48d1-93ba-25fcc89f81c2/2f580ff7-409b-41a4-8721-2459f5df303f"
+					(reference "U8")
+					(unit 5)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 80.01 127 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6ce0c9d5-df9c-4bde-905f-ad1f5e9a3151")
+		(property "Reference" "C35"
+			(at 82.55 125.7235 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1000pF"
+			(at 82.55 128.2635 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 80.01 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 80.01 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 80.01 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d2cc62b2-0751-4dd6-bc7e-b314376da805")
+		)
+		(pin "2"
+			(uuid "ed62ba8f-2637-47ed-a57a-aa177ee91a73")
+		)
+		(instances
+			(project "IEPE Texas Instruments TIDUD62 Receiver"
+				(path "/b0c16732-dcc2-48d1-93ba-25fcc89f81c2/2f580ff7-409b-41a4-8721-2459f5df303f"
+					(reference "C35")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 96.52 92.71 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "845da2ca-d13f-47e0-96ea-c7fa9a88215f")
+		(property "Reference" "C33"
+			(at 99.06 91.4335 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1000pF"
+			(at 99.06 93.9735 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 96.52 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 96.52 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 96.52 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ddb189a2-7890-424c-bbcc-f4421878f49a")
+		)
+		(pin "2"
+			(uuid "2238c229-4866-45fd-aa10-00dc42ffb818")
+		)
+		(instances
+			(project "IEPE Texas Instruments TIDUD62 Receiver"
+				(path "/b0c16732-dcc2-48d1-93ba-25fcc89f81c2/2f580ff7-409b-41a4-8721-2459f5df303f"
+					(reference "C33")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 147.32 107.95 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "892f8ec7-d5f4-4ad6-91a9-63cd2c779312")
+		(property "Reference" "R55"
+			(at 149.86 106.6799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "100K"
+			(at 149.86 109.2199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 147.32 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 147.32 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 147.32 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "eb7d84d9-b719-4a5c-99e8-e090670ee732")
+		)
+		(pin "2"
+			(uuid "02638b66-65e8-4608-999a-8036d5ebed6b")
+		)
+		(instances
+			(project "IEPE Texas Instruments TIDUD62 Receiver"
+				(path "/b0c16732-dcc2-48d1-93ba-25fcc89f81c2/2f580ff7-409b-41a4-8721-2459f5df303f"
+					(reference "R55")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Comparator:LP2901D")
+		(at 224.79 67.31 0)
+		(unit 4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "915ddffc-ef1f-4453-8b7d-070274c41112")
+		(property "Reference" "U8"
+			(at 224.79 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LP2901D"
+			(at 224.79 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+			(at 223.52 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/lp2901.pdf"
+			(at 226.06 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Quad Differential Comparators, SOIC-14"
+			(at 224.79 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "7"
+			(uuid "d73e7d21-3bcb-46f6-ba55-b6e42bc0a9fc")
+		)
+		(pin "13"
+			(uuid "b63f23cc-4a9a-43dd-89bd-1c44d197dd68")
+		)
+		(pin "14"
+			(uuid "346bb37f-6ce4-4948-935e-2c9c42a4b808")
+		)
+		(pin "12"
+			(uuid "c4a04d3d-8b50-449b-9942-ccae66d158f2")
+		)
+		(pin "2"
+			(uuid "c37de117-7cfc-45cf-9b6b-4c769753054d")
+		)
+		(pin "11"
+			(uuid "50cf0515-0071-4ef5-a825-fee6f25140e5")
+		)
+		(pin "6"
+			(uuid "1a692254-4410-4196-b260-c4526b52db8b")
+		)
+		(pin "8"
+			(uuid "bc0c8946-e327-4771-bbeb-69c8e9de64a4")
+		)
+		(pin "3"
+			(uuid "4cf4f36a-85de-4ff6-a6c9-f89ce158902e")
+		)
+		(pin "5"
+			(uuid "0ca5c7cd-d54b-4ba5-830a-cd7f60c684d7")
+		)
+		(pin "9"
+			(uuid "1000db59-672e-4d73-91a5-0d10f8f2a457")
+		)
+		(pin "4"
+			(uuid "cdbd0bda-3944-4ee4-acd7-270c9c4d4c69")
+		)
+		(pin "10"
+			(uuid "cd3da74a-674e-423a-8e3d-0d1a4edc9380")
+		)
+		(pin "1"
+			(uuid "40dcecec-d501-4e6c-8159-7b8f4ccbee8f")
+		)
+		(instances
+			(project "IEPE Texas Instruments TIDUD62 Receiver"
+				(path "/b0c16732-dcc2-48d1-93ba-25fcc89f81c2/2f580ff7-409b-41a4-8721-2459f5df303f"
+					(reference "U8")
+					(unit 4)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Comparator:LP2901D")
+		(at 223.52 46.99 0)
+		(unit 3)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9d217a79-7d5e-4882-bb4b-6da0db6d13c7")
+		(property "Reference" "U8"
+			(at 223.52 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LP2901D"
+			(at 223.52 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+			(at 222.25 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/lp2901.pdf"
+			(at 224.79 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Quad Differential Comparators, SOIC-14"
+			(at 223.52 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "7"
+			(uuid "d73e7d21-3bcb-46f6-ba55-b6e42bc0a9fd")
+		)
+		(pin "13"
+			(uuid "b63f23cc-4a9a-43dd-89bd-1c44d197dd69")
+		)
+		(pin "14"
+			(uuid "346bb37f-6ce4-4948-935e-2c9c42a4b809")
+		)
+		(pin "12"
+			(uuid "c4a04d3d-8b50-449b-9942-ccae66d158f3")
+		)
+		(pin "2"
+			(uuid "c37de117-7cfc-45cf-9b6b-4c769753054e")
+		)
+		(pin "11"
+			(uuid "50cf0515-0071-4ef5-a825-fee6f25140e6")
+		)
+		(pin "6"
+			(uuid "1a692254-4410-4196-b260-c4526b52db8c")
+		)
+		(pin "8"
+			(uuid "bc0c8946-e327-4771-bbeb-69c8e9de64a5")
+		)
+		(pin "3"
+			(uuid "4cf4f36a-85de-4ff6-a6c9-f89ce158902f")
+		)
+		(pin "5"
+			(uuid "0ca5c7cd-d54b-4ba5-830a-cd7f60c684d8")
+		)
+		(pin "9"
+			(uuid "1000db59-672e-4d73-91a5-0d10f8f2a458")
+		)
+		(pin "4"
+			(uuid "cdbd0bda-3944-4ee4-acd7-270c9c4d4c6a")
+		)
+		(pin "10"
+			(uuid "cd3da74a-674e-423a-8e3d-0d1a4edc9381")
+		)
+		(pin "1"
+			(uuid "40dcecec-d501-4e6c-8159-7b8f4ccbee90")
+		)
+		(instances
+			(project "IEPE Texas Instruments TIDUD62 Receiver"
+				(path "/b0c16732-dcc2-48d1-93ba-25fcc89f81c2/2f580ff7-409b-41a4-8721-2459f5df303f"
+					(reference "U8")
+					(unit 3)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 83.82 99.06 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a72522f9-d3d5-4d74-9a57-0443e8e1266d")
+		(property "Reference" "R54"
+			(at 86.36 97.7899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "100K"
+			(at 86.36 100.3299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 83.82 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 83.82 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 83.82 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "04fdc38a-22a9-44c2-ba81-ae7407d833c6")
+		)
+		(pin "2"
+			(uuid "3090c69b-5f21-4ee2-bfaa-e5879310101a")
+		)
+		(instances
+			(project "IEPE Texas Instruments TIDUD62 Receiver"
+				(path "/b0c16732-dcc2-48d1-93ba-25fcc89f81c2/2f580ff7-409b-41a4-8721-2459f5df303f"
+					(reference "R54")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 148.59 74.93 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "acb9a0d7-5b89-4cab-a94e-34ddbcc148f1")
+		(property "Reference" "R52"
+			(at 151.13 73.6599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "100K"
+			(at 151.13 76.1999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 148.59 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 148.59 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 148.59 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "48ae6d4a-2b72-4aa1-9f65-57c8fe47fd33")
+		)
+		(pin "2"
+			(uuid "48bdd37d-0abd-4966-97f6-a40966eb1faa")
+		)
+		(instances
+			(project "IEPE Texas Instruments TIDUD62 Receiver"
+				(path "/b0c16732-dcc2-48d1-93ba-25fcc89f81c2/2f580ff7-409b-41a4-8721-2459f5df303f"
+					(reference "R52")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 62.23 105.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b0ebc9a9-03a0-4031-8178-8855e5a3c455")
+		(property "Reference" "#PWR056"
+			(at 62.23 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 62.23 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 62.23 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 62.23 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 62.23 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "951f385a-51af-490a-9d88-3bcc999a1025")
+		)
+		(instances
+			(project "IEPE Texas Instruments TIDUD62 Receiver"
+				(path "/b0c16732-dcc2-48d1-93ba-25fcc89f81c2/2f580ff7-409b-41a4-8721-2459f5df303f"
+					(reference "#PWR056")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 91.44 53.34 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bdd6bb09-d0a2-4928-92b9-443b25cc6043")
+		(property "Reference" "C32"
+			(at 90.1762 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 92.7162 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 91.44 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 91.44 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 91.44 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8e4a159b-1a6b-4e0c-9dd4-5a73890435e0")
+		)
+		(pin "2"
+			(uuid "f60a811f-ee41-4072-87ee-f4eb09226d1c")
+		)
+		(instances
+			(project "IEPE Texas Instruments TIDUD62 Receiver"
+				(path "/b0c16732-dcc2-48d1-93ba-25fcc89f81c2/2f580ff7-409b-41a4-8721-2459f5df303f"
+					(reference "C32")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 97.79 53.34 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ceb64886-684a-49d2-94e1-4c7c0fd5c16b")
+		(property "Reference" "#PWR053"
+			(at 104.14 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 102.87 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 97.79 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 97.79 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 97.79 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "afe6829f-eb84-435d-aad6-c9ddef85b257")
+		)
+		(instances
+			(project "IEPE Texas Instruments TIDUD62 Receiver"
+				(path "/b0c16732-dcc2-48d1-93ba-25fcc89f81c2/2f580ff7-409b-41a4-8721-2459f5df303f"
+					(reference "#PWR053")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 62.23 99.06 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d2a0f84b-e3fa-4e68-925d-0994f9644963")
+		(property "Reference" "C34"
+			(at 64.77 97.7962 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22nF"
+			(at 64.77 100.3362 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 62.23 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 62.23 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 62.23 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e978abd4-b650-41c2-b354-550bf60666e6")
+		)
+		(pin "2"
+			(uuid "4b9db4c2-54c9-4fbb-ae8a-64215eb8d5d8")
+		)
+		(instances
+			(project "IEPE Texas Instruments TIDUD62 Receiver"
+				(path "/b0c16732-dcc2-48d1-93ba-25fcc89f81c2/2f580ff7-409b-41a4-8721-2459f5df303f"
+					(reference "C34")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 88.9 127 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e4660f12-af2e-4738-9259-32347f7dd60e")
+		(property "Reference" "R56"
+			(at 91.44 125.7299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "20K"
+			(at 91.44 128.2699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 88.9 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 88.9 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 88.9 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "34ea38ab-564e-4c8d-b6dc-9f6e7e7feecf")
+		)
+		(pin "2"
+			(uuid "2988de3d-6483-4203-b217-cd7199d6d2d7")
+		)
+		(instances
+			(project "IEPE Texas Instruments TIDUD62 Receiver"
+				(path "/b0c16732-dcc2-48d1-93ba-25fcc89f81c2/2f580ff7-409b-41a4-8721-2459f5df303f"
+					(reference "R56")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 134.62 50.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f9d34cec-6bca-493b-b1f8-3124ffd77d6b")
+		(property "Reference" "#PWR052"
+			(at 134.62 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 134.62 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 134.62 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 134.62 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 134.62 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6fab9c9d-247d-4c14-9bdd-4b3b488713d8")
+		)
+		(instances
+			(project "IEPE Texas Instruments TIDUD62 Receiver"
+				(path "/b0c16732-dcc2-48d1-93ba-25fcc89f81c2/2f580ff7-409b-41a4-8721-2459f5df303f"
+					(reference "#PWR052")
 					(unit 1)
 				)
 			)

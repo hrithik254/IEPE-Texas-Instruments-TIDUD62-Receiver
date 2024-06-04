@@ -936,7 +936,7 @@
 					)
 				)
 			)
-			(property "Value" "SN74HC595PW"
+			(property "Value" "SN74HC595PWR"
 				(at 30.48 7.62 0)
 				(effects
 					(font
@@ -1529,6 +1529,16 @@
 	)
 	(wire
 		(pts
+			(xy 34.29 154.94) (xy 59.69 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "22bef366-5e56-4534-b91a-fed261eff3af")
+	)
+	(wire
+		(pts
 			(xy 176.53 93.98) (xy 187.96 93.98)
 		)
 		(stroke
@@ -1626,6 +1636,16 @@
 			(type default)
 		)
 		(uuid "70578e57-de34-4508-9280-e8026662147e")
+	)
+	(wire
+		(pts
+			(xy 34.29 151.13) (xy 59.69 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "730dbdfa-a2e1-4b6f-ba11-f72839c89f0b")
 	)
 	(wire
 		(pts
@@ -1909,6 +1929,16 @@
 	)
 	(wire
 		(pts
+			(xy 36.83 146.05) (xy 60.96 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "edb95ba9-a9f8-41da-aa2f-6510bb04830c")
+	)
+	(wire
+		(pts
 			(xy 181.61 73.66) (xy 181.61 76.2)
 		)
 		(stroke
@@ -2034,7 +2064,7 @@
 		)
 		(uuid "48f1dd0b-b700-4193-9de3-c9436d196f01")
 	)
-	(label "CS"
+	(label "SR_CS"
 		(at 187.96 93.98 0)
 		(fields_autoplaced yes)
 		(effects
@@ -2133,6 +2163,17 @@
 		)
 		(uuid "99559905-edeb-48de-b1ce-6e3747cf803b")
 	)
+	(label "SCLK"
+		(at 59.69 154.94 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "aa74384d-9e17-47da-b4c1-dad73836f527")
+	)
 	(label "DVDD"
 		(at 200.66 76.2 0)
 		(fields_autoplaced yes)
@@ -2155,6 +2196,17 @@
 		)
 		(uuid "b48d008a-60d9-4069-a41a-b4cf08400ef0")
 	)
+	(label "DIN"
+		(at 59.69 151.13 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b8aa28f5-b978-42b9-b3b1-4d67110a6e75")
+	)
 	(label "RESET"
 		(at 59.69 138.43 0)
 		(fields_autoplaced yes)
@@ -2165,6 +2217,17 @@
 			(justify left bottom)
 		)
 		(uuid "b950d39d-431c-4b15-b267-3b9eaf5b345c")
+	)
+	(label "SR_CS"
+		(at 60.96 146.05 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "bc69f167-e38d-4e2e-9a60-e08af49713e7")
 	)
 	(label "GAIN_SEL2"
 		(at 59.69 130.81 0)
@@ -2212,6 +2275,30 @@
 		)
 		(uuid "5df88f10-71d9-470a-91d7-51b85a3bcc2c")
 	)
+	(hierarchical_label "SCLK"
+		(shape input)
+		(at 34.29 154.94 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5f02a571-68e2-434b-93ec-19a8ca215efb")
+	)
+	(hierarchical_label "SR_CS"
+		(shape input)
+		(at 36.83 146.05 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a011791e-0d85-48e4-8c83-613ef5c74b28")
+	)
 	(hierarchical_label "GAIN_SEL1"
 		(shape input)
 		(at 34.29 133.35 180)
@@ -2248,6 +2335,18 @@
 		)
 		(uuid "becd72c4-644b-45a2-a55f-c19a1f2b36e0")
 	)
+	(hierarchical_label "DIN"
+		(shape input)
+		(at 34.29 151.13 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c6b18397-c10a-4a49-8424-95229dde4ffb")
+	)
 	(hierarchical_label "OSR1"
 		(shape input)
 		(at 34.29 143.51 180)
@@ -2281,7 +2380,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1252f60a-dcfe-4774-a021-685f65a687ac")
-		(property "Reference" "R48"
+		(property "Reference" "R60"
 			(at 203.2 93.726 90)
 			(effects
 				(font
@@ -2297,7 +2396,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 203.2 91.44 0)
 			(effects
 				(font
@@ -2333,7 +2432,7 @@
 		(instances
 			(project "IEPE Texas Instruments TIDUD62 Receiver"
 				(path "/b0c16732-dcc2-48d1-93ba-25fcc89f81c2/3a9b049a-9840-4d4c-a2f0-f9a7637055c1"
-					(reference "R48")
+					(reference "R60")
 					(unit 1)
 				)
 			)
@@ -2367,7 +2466,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 			(at 219.71 105.41 0)
 			(effects
 				(font
@@ -2418,7 +2517,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "44dda385-95fc-4ab0-a6af-328dbe7ab4ac")
-		(property "Reference" "#PWR049"
+		(property "Reference" "#PWR064"
 			(at 181.61 67.31 0)
 			(effects
 				(font
@@ -2468,7 +2567,7 @@
 		(instances
 			(project "IEPE Texas Instruments TIDUD62 Receiver"
 				(path "/b0c16732-dcc2-48d1-93ba-25fcc89f81c2/3a9b049a-9840-4d4c-a2f0-f9a7637055c1"
-					(reference "#PWR049")
+					(reference "#PWR064")
 					(unit 1)
 				)
 			)
@@ -2500,7 +2599,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical"
 			(at 100.33 58.42 0)
 			(effects
 				(font
@@ -2575,7 +2674,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "52a21a23-06f1-4064-9623-d8b3825eb371")
-		(property "Reference" "R49"
+		(property "Reference" "R61"
 			(at 181.61 101.346 90)
 			(effects
 				(font
@@ -2591,7 +2690,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 181.61 99.06 0)
 			(effects
 				(font
@@ -2627,7 +2726,7 @@
 		(instances
 			(project "IEPE Texas Instruments TIDUD62 Receiver"
 				(path "/b0c16732-dcc2-48d1-93ba-25fcc89f81c2/3a9b049a-9840-4d4c-a2f0-f9a7637055c1"
-					(reference "R49")
+					(reference "R61")
 					(unit 1)
 				)
 			)
@@ -2642,7 +2741,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "78a7df37-09c2-45df-a28d-059b6d347698")
-		(property "Reference" "#PWR051"
+		(property "Reference" "#PWR066"
 			(at 214.63 121.92 0)
 			(effects
 				(font
@@ -2692,7 +2791,7 @@
 		(instances
 			(project "IEPE Texas Instruments TIDUD62 Receiver"
 				(path "/b0c16732-dcc2-48d1-93ba-25fcc89f81c2/3a9b049a-9840-4d4c-a2f0-f9a7637055c1"
-					(reference "#PWR051")
+					(reference "#PWR066")
 					(unit 1)
 				)
 			)
@@ -2707,7 +2806,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8c43840f-3794-4d80-97ed-5dd47a14aecc")
-		(property "Reference" "#PWR048"
+		(property "Reference" "#PWR065"
 			(at 110.49 110.49 0)
 			(effects
 				(font
@@ -2757,7 +2856,7 @@
 		(instances
 			(project "IEPE Texas Instruments TIDUD62 Receiver"
 				(path "/b0c16732-dcc2-48d1-93ba-25fcc89f81c2/3a9b049a-9840-4d4c-a2f0-f9a7637055c1"
-					(reference "#PWR048")
+					(reference "#PWR065")
 					(unit 1)
 				)
 			)
@@ -2772,7 +2871,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b9ee6da6-fd1b-4155-a8f9-a6d901c96f13")
-		(property "Reference" "#PWR050"
+		(property "Reference" "#PWR063"
 			(at 90.17 72.39 0)
 			(effects
 				(font
@@ -2822,7 +2921,7 @@
 		(instances
 			(project "IEPE Texas Instruments TIDUD62 Receiver"
 				(path "/b0c16732-dcc2-48d1-93ba-25fcc89f81c2/3a9b049a-9840-4d4c-a2f0-f9a7637055c1"
-					(reference "#PWR050")
+					(reference "#PWR063")
 					(unit 1)
 				)
 			)
@@ -2838,7 +2937,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e75d0a8c-191e-46fe-a66b-fbad62184bab")
-		(property "Reference" "U8"
+		(property "Reference" "U10"
 			(at 146.05 73.66 0)
 			(effects
 				(font
@@ -2846,7 +2945,7 @@
 				)
 			)
 		)
-		(property "Value" "SN74HC595PW"
+		(property "Value" "SN74HC595PWR"
 			(at 146.05 76.2 0)
 			(effects
 				(font
@@ -2854,7 +2953,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PW16"
+		(property "Footprint" "Project Footprint Library:SN74HC595"
 			(at 115.57 83.82 0)
 			(effects
 				(font
@@ -2934,7 +3033,7 @@
 		(instances
 			(project "IEPE Texas Instruments TIDUD62 Receiver"
 				(path "/b0c16732-dcc2-48d1-93ba-25fcc89f81c2/3a9b049a-9840-4d4c-a2f0-f9a7637055c1"
-					(reference "U8")
+					(reference "U10")
 					(unit 1)
 				)
 			)
@@ -2950,7 +3049,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f7287c91-0835-4489-9ff9-bb339770dfba")
-		(property "Reference" "C32"
+		(property "Reference" "C40"
 			(at 184.15 77.4762 0)
 			(effects
 				(font
@@ -2968,7 +3067,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 181.61 78.74 0)
 			(effects
 				(font
@@ -3004,7 +3103,7 @@
 		(instances
 			(project "IEPE Texas Instruments TIDUD62 Receiver"
 				(path "/b0c16732-dcc2-48d1-93ba-25fcc89f81c2/3a9b049a-9840-4d4c-a2f0-f9a7637055c1"
-					(reference "C32")
+					(reference "C40")
 					(unit 1)
 				)
 			)

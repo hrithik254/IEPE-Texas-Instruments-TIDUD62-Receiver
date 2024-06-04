@@ -1984,7 +1984,7 @@
 				)
 			)
 		)
-		(property "Value" "SN74HC595PW"
+		(property "Value" "SN74HC595PWR"
 			(at 30.48 7.62 0)
 			(effects
 				(font
